@@ -1,0 +1,55 @@
+setup virtual environment using python
+when in the directory
+
+cmd$ python -m venv myvenv
+it will create a bunch of folders
+
+still in the directory
+cmd$ myvenv\Scripts\activate
+
+mkdir test to create directory test
+
+to create a blog's folder skeleton using django
+(myvenv) C:\Users\Name\djangogirls>$ django-admin.exe startproject mysite .
+
+include the dot so that it knows to create in this directory
+
+to start the server
+(myvenv) ~/djangogirls$ python manage.py runserver
+
+browser to check the page
+http://127.0.0.1:8000/
+
+A command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+We reviewed how web servers work in the How the Internet works chapter.
+To type additional commands while the web server is running, open a new terminal 
+window and activate your virtualenv -- to review instructions on how to open a 
+second terminal window, see Introduction to the command line. To stop the web
+server, switch back to the window in which it's running and press CTRL+C - Control 
+and C keys together (on Windows, you might have to press Ctrl+Break).
+
+to start blog
+(myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
+
+
+deploy through pythonanywhere
+code hosting service github
+
+A website has to be located on a server. There are a lot of server providers 
+available on the internet, we're going to use PythonAnywhere. 
+PythonAnywhere is free for small applications that don't have too many visitors 
+so it'll definitely be enough for you now.
+
+The other external service we'll be using is GitHub, which is a code hosting service.
+There are others out there, but almost all programmers have a GitHub account these 
+days, and now so will you! These three places will be important to you. 
+Your local computer will be the place where you do development and testing. 
+When you're happy with the changes, you will place a copy of your program on 
+GitHub. Your website will be on PythonAnywhere and you will update it by 
+getting a new copy of your code from GitHub.
+
+Git is a "version control system" used by a lot of programmers. This software can 
+track changes to files over time so that you can recall specific versions later. 
+A bit like the "track changes" feature in word processor programs 
+(e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+
